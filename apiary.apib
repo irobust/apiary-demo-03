@@ -1,20 +1,13 @@
 FORMAT: 1A
 HOST: http://polls.apiblueprint.org/
 
-# irobust 
+# Demo 03
 
 Polls is a simple API allowing consumers to view polls and vote in them.
-Add something here.
 
 ## Questions Collection [/questions]
 
 ### List All Questions [GET]
-+ Request
-    
-    + Headers
-    
-            X-Info: Some Message
-            x-api-version: 2
 
 + Response 200 (application/json)
 
@@ -47,6 +40,10 @@ object containing a question and a collection of answers in the
 form of choices.
 
 + Request (application/json)
+    + Headers
+        Authorization: Bearer 1234
+    
+    + Body
 
         {
             "question": "Favourite programming language?",
